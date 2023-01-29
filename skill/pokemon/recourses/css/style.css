@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    font-family: sans-serif;
+    background: #39AEA9;
+    padding: 4rem;
+    max-height: 100vh;
+}
+
+.cards{    
+    height: 85vh;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    gap: 20px;
+}
+
+.card{
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.5);
+}
+
+li{
+    list-style: none;
+}
+
+.card--3rd{
+    grid-row: 7/13;
+    grid-column: 2/5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.card--3rd > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    flex-shrink: 1;
+}
+
+.card--3rd > button{
+    width: 15rem;
+    height: 6rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    border: none;
+    background: #ee1515;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.card--2nd{
+    grid-column: 1/5;
+    grid-row: 1/7;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.card--2nd > input{
+    width: 70%;
+    height: 4rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    padding-left: 4rem;
+}
+
+.card--1st{
+    grid-column: 5/13;
+    grid-row: 1/9;
+}
+
+.card--1st{
+    padding: 4rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:87.5rem) {
+    .card--3rd{
+        grid-column: 1/5;
+    }
+
+    .card--1st{
+        grid-row: 1/13;
+    }
+}
+
+@media screen and (max-width:62.5rem) {
+    .card--1st, .card--2nd{
+        display: none;
+    }
+
+    .card--3rd{
+        grid-row: 1/13;
+        grid-column: 1/13;
+    }
+}

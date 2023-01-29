@@ -1,0 +1,66 @@
+/*rem = standart grootte van browser. 1rem = 1*grootte letter grootte browser. Als je iets responsive met browser font size wil maken
+moet je de aantal px/jouw font-size doen
+
+cascading = het concept dat een lijn code die later komt de lijn code die eerder komt overschrijft. Voorbeeld:
+color: blue;
+color: red;
+de kleur zal rood zijn omdat het later komt dan blauw
+Behalve als je de class of id specifiek aanroept (zie voorbeeld bij .btn)
+de klassen tellen bij elkaar op, als je een element met twee classen heeft en dat wordt aangeroept dan zal het een hogere waarde hebben
+id geeft 100 punten
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1rem;
+}
+
+article{
+    width: 35vw;
+    border: 5px dotted blue;
+}
+
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    border: 5px dotted red;
+}
+
+p{
+    margin-bottom: 2.5rem;
+    border: 5px dotted green;
+}
+
+.btn{
+    background: blue;
+}
+
+button{
+    outline: none;
+    border: none;
+    background: green;
+    color: white;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 5px dotted yellow;
+    width: 100%;
+}
+
+
+@media screen and (max-width:62.5rem) {
+    article{
+        width: 80vw;
+    }
+}

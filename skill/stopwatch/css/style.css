@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    background-color: #BFACE2;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+
+
+article{
+    color: white;
+}
+
+.card{
+    width: 40rem;
+    height: 40rem;
+    background: #A084DC;
+    border-radius: 5rem;
+    box-shadow: 0 1rem 2rem 0px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+.card--buy{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.card--buy img{
+    height: 70%;
+    width: 100%;
+}
+
+.card--buy p{
+    height: 20%;
+    font-size: 75%;
+}
+
+.card--slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem;
+}
+
+.card--slider > h2{
+    font-size: 400%;
+}
+
+.card--slider > input{
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    background: linear-gradient(to right, #4776e6, #8e54e9);
+    border-radius: 0.7rem;
+    height: 1.5rem;
+}
+
+.card--slider > input::-webkit-slider-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+    background: linear-gradient(to left, #4776e6, #8e54e9);;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 5rem;
+}
+
+.card--slider > input::-moz-range-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+    background: linear-gradient(to left, #4776e6, #8e54e9);;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 5rem;
+}
+
+.card--stopwatch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.timerText{
+    font-size: 4rem;
+}
+
+.button{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.button--start{
+    background: #B6EADA;
+}
+
+.button--stop{
+    background: #F48484;
+}
+
+.button--reset{
+    background: #93C6E7;
+}
